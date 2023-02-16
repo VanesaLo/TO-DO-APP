@@ -1,4 +1,4 @@
-import React, { useState, ChangeEvent, FormEvent } from "react";
+import React, { useState, FormEvent } from "react";
 import { useAppDispatch } from "../redux/hooks/hooks";
 import { addTodo } from "../redux/feautred/todoSlice";
 import { nanoid } from "@reduxjs/toolkit";
@@ -7,10 +7,6 @@ export const TodoForm: React.FC = () => {
   const [newTodo, setNewTodo] = useState("");
 
   const dispatch = useAppDispatch();
-
-  // const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-  //   setNewTodo(e.target.value);
-  // };
 
   const handleSubmit = (e: FormEvent<HTMLButtonElement>) => {
     e.preventDefault();

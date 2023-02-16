@@ -1,20 +1,15 @@
 import React from "react";
-// import { TodoItem } from "./TodoItem";
+import { Todo } from "../redux/feautred/todoSlice";
+import { useAppSelector } from "../redux/hooks/hooks";
+import { TodoItem } from "./TodoItem";
 
-// interface TodoListProps {
-//   todos: Array<Todo>;
-//   toggleComplete: ToggleComplete;
-// }
-
-// export const TodoList: React.FC<TodoListProps> = ({
-//   todos,
-//   toggleComplete,
-// }) => {
-//   return (
-//     <ul>
-//       {todos.map((todo) => (
-//         <TodoItem key={todo.text} todo={todo} toggleComplete={toggleComplete} />
-//       ))}
-//     </ul>
-//   );
-// };
+export const TodoList: React.FC = () => {
+  const todos = useAppSelector((state) => state.todos);
+  return (
+    <ul>
+      {todos.map((todo) => (
+        <TodoItem key={todo.id} todo={todo} />
+      ))}
+    </ul>
+  );
+};
