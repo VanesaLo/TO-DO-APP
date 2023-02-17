@@ -1,15 +1,20 @@
 import React, { useState } from "react";
+import "./index.css";
 import { TodoForm } from "./components/TodoForm";
 import { TodoList } from "./components/TodoList";
 import TotalCompleteItems from "./components/TotalTodos";
 
 function App() {
   return (
-    <div>
-      <h1>Todo app</h1>
-      <TodoForm />
-      <TodoList />
-      <TotalCompleteItems />
+    <div className="container h-screen w-full">
+      <div className="grid grid-col-1 place-items-center h-full">
+        <header>
+          <h1 className="text-4xl font-bold font-sans italic">My Todo List</h1>
+        </header>
+        <TodoForm />
+        <TodoList />
+        <TotalCompleteItems />
+      </div>
     </div>
   );
 }

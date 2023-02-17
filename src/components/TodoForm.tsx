@@ -21,15 +21,19 @@ export const TodoForm: React.FC = () => {
   };
 
   return (
-    <form className="todo-form">
+    <form className="space-x-4">
       <input
         type="text"
-        className="todo-input"
+        className="rounded-lg p-2 w-80 text-center"
         placeholder="Add a todo"
         value={newTodo}
         onChange={(e) => setNewTodo(e.target.value)}
       />
-      <button type="submit" className="todo-button" onClick={handleSubmit}>
+      <button
+        type="submit"
+        className="bg-purple-400 p-2 rounded-lg"
+        onClick={handleSubmit}
+      >
         Add Todo
       </button>
     </form>
