@@ -1,6 +1,6 @@
 import React, { useState, FormEvent } from "react";
 import { useAppDispatch } from "../redux/hooks/hooks";
-import { addTodo } from "../redux/feautred/todoSlice";
+import { addTodo } from "../redux/features/todoSlice";
 import { nanoid } from "@reduxjs/toolkit";
 
 export const TodoForm: React.FC = () => {

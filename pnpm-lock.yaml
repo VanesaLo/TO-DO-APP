@@ -14,6 +14,7 @@ specifiers:
   react-dom: ^18.2.0
   react-redux: ^8.0.5
   react-scripts: 5.0.1
+  redux-persist: ^6.0.0
   tailwindcss: ^3.2.6
   typescript: ^4.9.5
   web-vitals: ^2.1.4
@@ -32,6 +33,7 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-redux: 8.0.5_3xleytyzprlgycb2ded54tx72i
   react-scripts: 5.0.1_j5ip3o3v6sktjzl5cxtjyfbuo4
+  redux-persist: 6.0.0_react@18.2.0
   typescript: 4.9.5
   web-vitals: 2.1.4
 
@@ -8397,6 +8399,18 @@ packages:
     dependencies:
       indent-string: 4.0.0
       strip-indent: 3.0.0
+    dev: false
+
+  /redux-persist/6.0.0_react@18.2.0:
+    resolution: {integrity: sha512-71LLMbUq2r02ng2We9S215LtPu3fY0KgaGE0k8WRgl6RkqxtGfl7HUozz1Dftwsb0D/5mZ8dwAaPbtnzfvbEwQ==}
+    peerDependencies:
+      react: '>=16'
+      redux: '>4.0.0'
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dependencies:
+      react: 18.2.0
     dev: false
 
   /redux-thunk/2.4.2_redux@4.2.1:

@@ -8,14 +8,9 @@ export interface Todo {
 
 const initialState: Todo[] = [
   {
-    id: "1",
-    todo: "do yoga",
+    id: "",
+    todo: "",
     complete: false,
-  },
-  {
-    id: "2",
-    todo: "make coffee",
-    complete: true,
   },
 ];
 

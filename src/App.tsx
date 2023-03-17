@@ -6,7 +6,7 @@ import TotalCompleteItems from "./components/TotalTodos";
 
 function App() {
   return (
-    <div className="container h-screen w-full">
+    <div className="containerApp h-screen">
       <div className="grid grid-col-1 place-items-center h-full">
         <header>
           <h1 className="text-4xl font-bold font-sans italic">My Todo List</h1>
