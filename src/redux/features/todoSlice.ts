@@ -6,13 +6,7 @@ export interface Todo {
   complete: boolean;
 }
 
-const initialState: Todo[] = [
-  {
-    id: "",
-    todo: "",
-    complete: false,
-  },
-];
+const initialState: Todo[] = [];
 
 const todoSlice = createSlice({
   name: "todos",
