@@ -38,12 +38,12 @@ export const TodoItem: React.FC<TodoListItem> = ({ todo }) => {
         onChange={handleCompleteChange}
         className="!w-6 !h-6 mr-5"
       />
-      <div className="text-lg break-words">
+      <div className="text-lg break-words textTodo">
         <span className="">{todo.todo}</span>
       </div>
       <div>
         <button
-          className="bg-purple-400 p-2 rounded-lg w-15 ml-5"
+          className="bg-purple-400 p-2 rounded-lg w-15 ml-5 btn"
           onClick={handleDelete}
         >
           Delete
