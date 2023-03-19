@@ -31,21 +31,24 @@ export const TodoItem: React.FC<TodoListItem> = ({ todo }) => {
   };
 
   return (
-    <div className="">
-      <li className="flex flex-row">
-        <input
-          type="checkbox"
-          checked={todo.complete}
-          onChange={handleCompleteChange}
-          className="w-6 h-6"
-        />
-        <div className="text-lg">
-          <span className="">{todo.todo}</span>
-        </div>
-        <button className="bg-purple-400 p-2 rounded-lg" onClick={handleDelete}>
+    <li className="grid grid-cols-3 grid-rows-1 items-baseline space-y-4 itemsTasks">
+      <input
+        type="checkbox"
+        checked={todo.complete}
+        onChange={handleCompleteChange}
+        className="!w-6 !h-6 mr-5"
+      />
+      <div className="text-lg break-words">
+        <span className="">{todo.todo}</span>
+      </div>
+      <div>
+        <button
+          className="bg-purple-400 p-2 rounded-lg w-15 ml-5"
+          onClick={handleDelete}
+        >
           Delete
         </button>
-      </li>
-    </div>
+      </div>
+    </li>
   );
 };

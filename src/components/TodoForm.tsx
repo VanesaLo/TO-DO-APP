@@ -21,7 +21,7 @@ export const TodoForm: React.FC = () => {
   };
 
   return (
-    <form className="flex flex-row space-y-2 justify-center items-center space-x-4">
+    <form className="flex flex-col space-y-2 justify-center items-center mt-5">
       <input
         type="text"
         className="rounded-lg p-2 w-80 text-center"
