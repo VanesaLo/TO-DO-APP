@@ -12,3 +12,16 @@
     rgba(232, 164, 252, 1) 100%
   );
 }
+
+@media only screen and (min-width: 768px) {
+  .listTasks {
+    width: 80vw;
+  }
+
+  .itemsTasks {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4px 0 4px;
+  }
+}
